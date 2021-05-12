@@ -11,7 +11,7 @@ Results: Experimentally verified bioactivity data points, obtained from public d
 <img src="https://user-images.githubusercontent.com/13165170/118031417-2c3eff80-b36f-11eb-9c58-d05040d2512c.png" width="900"> 
 
 ## Drug/compound - domain mapping procedure over two representative toy examples:
-<img src="https://user-images.githubusercontent.com/13165170/118031433-319c4a00-b36f-11eb-85f1-40641cdf25c3.png" width="920"> 
+<img src="https://user-images.githubusercontent.com/13165170/118031433-319c4a00-b36f-11eb-85f1-40641cdf25c3.png" width="910"> 
 
 ## Article Info
 
