@@ -22,10 +22,10 @@ Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ia
 2 Institute of Informatics, Hacettepe University, 06800 Ankara, Turkey<br>
 3 CanSyL, Graduate School of Informatics, Middle East Technical University, 06800 Ankara, Turkey<br>
 4 Center for Genomics and Rare Diseases & Biobank for Rare Diseases, Hacettepe University, 06230 Ankara, Turkey<br>
-5 School of Chemistry, University College Dublin, D04 N2E2 Dublin, Ireland.
-6 Department of Chemistry, University of Durham, DH1 3LE Durham, UK
-7 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Trust Genome Campus, CB10 1SD Hinxton, Cambridge, UK
-8 Section of Pulmonary and Critical Care Medicine, University of Chicago, Chicago IL, 60637, USA
+5 School of Chemistry, University College Dublin, D04 N2E2 Dublin, Ireland<br>
+6 Department of Chemistry, University of Durham, DH1 3LE Durham, UK<br>
+7 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Trust Genome Campus, CB10 1SD Hinxton, Cambridge, UK<br>
+8 Section of Pulmonary and Critical Care Medicine, University of Chicago, Chicago IL, 60637, USA<br>
 \*  Corresponding authors
 
 ## Citation
