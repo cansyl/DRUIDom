@@ -1,0 +1,46 @@
+* Title
+*
+
+BOMLEV -1
+SET lib /path/to/toppar
+
+OPEN UNIT 1 CARD READ NAME @lib/top_all22_prot.inp
+READ RTF CARD UNIT 1
+CLOSE UNIT 1
+
+!
+! Uncomment to load the extra topology file, if needed
+!
+!OPEN UNIT 1 CARD READ NAME "merged.rtf"
+!READ RTF CARD UNIT 1 APPEND
+!CLOSE UNIT 1
+
+
+OPEN UNIT 1 CARD READ NAME @lib/par_all22_prot.inp
+READ PARA CARD UNIT 1
+CLOSE UNIT 1
+
+!
+! Uncomment to load the extra parameter file, if needed
+!
+!OPEN UNIT 1 CARD READ NAME "merged.par"
+!READ PARA CARD UNIT 1 APPEND
+!CLOSE UNIT 1
+
+!
+! Loads the complex topology
+!
+OPEN UNIT 1 CARD READ NAME "complex.psf"
+READ PSF CARD UNIT 1
+CLOSE UNIT 1
+
+!
+! Loads the complex coordinates
+!
+OPEN UNIT 1 CARD READ NAME "complex.crd"
+READ COOR CARD UNIT 1
+CLOSE UNIT 1
+
+ENERGY
+
+STOP

@@ -1,0 +1,82 @@
+REMARK  Energy: 46.5153
+REMARK  SimpleFitness: 46.5153
+REMARK  FullFitness: -1632.859
+REMARK  InterFull: -85.3961
+REMARK  IntraFull: 100.774
+REMARK  solvFull: -1871.23
+REMARK  surfFull: 222.993
+REMARK  extraFull: 0.0
+REMARK  deltaGcompsolvpol: -1871.23
+REMARK  deltaGcompsolvnonpol: 222.993
+REMARK  deltaGprotsolvpol: -1887.31
+REMARK  deltaGprotsolvnonpol: 225.358
+REMARK  deltaGligsolvpol: -40.0641
+REMARK  deltaGligsolvnonpol: 11.0453
+REMARK  deltaGvdw: -85.3961
+REMARK  deltaGelec: 0.0
+REMARK  deltaG: -9.901063
+REMARK  Cluster: 0
+REMARK  ClusterRank: 7
+ATOM   4711 N1   LIG     1      14.961   9.556  32.236  1.00  0.00      LIG  
+ATOM   4712 C7   LIG     1      13.592   9.628  32.264  1.00  0.00      LIG  
+ATOM   4713 C8   LIG     1      12.718  10.534  31.662  1.00  0.00      LIG  
+ATOM   4714 C9   LIG     1      11.350  10.338  31.855  1.00  0.00      LIG  
+ATOM   4715 C10  LIG     1      10.877   9.285  32.636  1.00  0.00      LIG  
+ATOM   4716 C11  LIG     1      11.765   8.403  33.254  1.00  0.00      LIG  
+ATOM   4717 C12  LIG     1      13.147   8.562  33.058  1.00  0.00      LIG  
+ATOM   4718 C13  LIG     1      14.309   7.853  33.492  1.00  0.00      LIG  
+ATOM   4719 C14  LIG     1      15.398   8.467  32.902  1.00  0.00      LIG  
+ATOM   4720 C15  LIG     1      16.802   8.017  33.078  1.00  0.00      LIG  
+ATOM   4721 N2   LIG     1      17.982   8.472  32.516  1.00  0.00      LIG  
+ATOM   4722 C16  LIG     1      19.033   7.866  33.185  1.00  0.00      LIG  
+ATOM   4723 C17  LIG     1      20.416   8.065  33.130  1.00  0.00      LIG  
+ATOM   4724 C18  LIG     1      21.221   7.362  34.016  1.00  0.00      LIG  
+ATOM   4725 C19  LIG     1      20.686   6.419  34.888  1.00  0.00      LIG  
+ATOM   4726 C20  LIG     1      19.321   6.169  34.896  1.00  0.00      LIG  
+ATOM   4727 C21  LIG     1      18.483   6.925  34.069  1.00  0.00      LIG  
+ATOM   4728 C22  LIG     1      17.085   6.991  33.954  1.00  0.00      LIG  
+ATOM   4729 C23  LIG     1      15.978   6.354  34.557  1.00  0.00      LIG  
+ATOM   4730 C24  LIG     1      14.650   6.760  34.320  1.00  0.00      LIG  
+ATOM   4731 C1   LIG     1      18.829   8.676  30.231  1.00  0.00      LIG  
+ATOM   4732 C2   LIG     1      18.088   9.400  31.347  1.00  0.00      LIG  
+ATOM   4733 C3   LIG     1      18.704  10.794  31.546  1.00  0.00      LIG  
+ATOM   4734 H1   LIG     1      18.449  11.398  30.668  1.00  0.00      LIG  
+ATOM   4735 C4   LIG     1      18.067  11.478  32.742  1.00  0.00      LIG  
+ATOM   4736 H2   LIG     1      18.376  12.524  32.803  1.00  0.00      LIG  
+ATOM   4737 C5   LIG     1      16.538  11.428  32.625  1.00  0.00      LIG  
+ATOM   4738 C6   LIG     1      15.906  10.469  31.604  1.00  0.00      LIG  
+ATOM   4739 H3   LIG     1      15.308  11.060  30.905  1.00  0.00      LIG  
+ATOM   4740 O1   LIG     1      16.793   9.677  30.790  1.00  0.00      LIG  
+ATOM   4741 C25  LIG     1      13.790   5.914  35.160  1.00  0.00      LIG  
+ATOM   4742 O2   LIG     1      12.574   5.982  35.209  1.00  0.00      LIG  
+ATOM   4743 N3   LIG     1      14.611   5.072  35.866  1.00  0.00      LIG  
+ATOM   4744 C26  LIG     1      15.999   5.258  35.554  1.00  0.00      LIG  
+ATOM   4745 N4   LIG     1      18.646  10.873  34.001  1.00  0.00      LIG  
+ATOM   4746 C27  LIG     1      17.808  10.692  35.201  1.00  0.00      LIG  
+ATOM   4747 O3   LIG     1      20.139  10.770  31.583  1.00  0.00      LIG  
+ATOM   4748 C28  LIG     1      20.685  12.064  31.336  1.00  0.00      LIG  
+ATOM   4749 H4   LIG     1      18.309   7.751  29.966  1.00  0.00      LIG  
+ATOM   4750 H5   LIG     1      19.851   8.417  30.515  1.00  0.00      LIG  
+ATOM   4751 H6   LIG     1      18.866   9.293  29.328  1.00  0.00      LIG  
+ATOM   4752 H7   LIG     1      16.263  12.424  32.269  1.00  0.00      LIG  
+ATOM   4753 H8   LIG     1      16.015  11.361  33.578  1.00  0.00      LIG  
+ATOM   4754 H9   LIG     1      13.076  11.350  31.045  1.00  0.00      LIG  
+ATOM   4755 H10  LIG     1      10.642  11.012  31.387  1.00  0.00      LIG  
+ATOM   4756 H11  LIG     1       9.809   9.154  32.772  1.00  0.00      LIG  
+ATOM   4757 H12  LIG     1      11.373   7.594  33.857  1.00  0.00      LIG  
+ATOM   4758 H13  LIG     1      20.890   8.761  32.457  1.00  0.00      LIG  
+ATOM   4759 H14  LIG     1      22.285   7.559  34.011  1.00  0.00      LIG  
+ATOM   4760 H15  LIG     1      21.328   5.871  35.568  1.00  0.00      LIG  
+ATOM   4761 H16  LIG     1      18.915   5.432  35.575  1.00  0.00      LIG  
+ATOM   4762 H17  LIG     1      14.270   4.377  36.522  1.00  0.00      LIG  
+ATOM   4763 H18  LIG     1      16.529   5.552  36.464  1.00  0.00      LIG  
+ATOM   4764 H19  LIG     1      16.403   4.334  35.133  1.00  0.00      LIG  
+ATOM   4765 H20  LIG     1      19.447  11.465  34.265  1.00  0.00      LIG  
+ATOM   4766 H21  LIG     1      18.480  10.425  36.015  1.00  0.00      LIG  
+ATOM   4767 H22  LIG     1      17.108   9.881  35.001  1.00  0.00      LIG  
+ATOM   4768 H23  LIG     1      17.293  11.629  35.413  1.00  0.00      LIG  
+ATOM   4769 H24  LIG     1      20.427  12.746  32.149  1.00  0.00      LIG  
+ATOM   4770 H25  LIG     1      20.307  12.449  30.386  1.00  0.00      LIG  
+ATOM   4771 H26  LIG     1      21.773  11.979  31.281  1.00  0.00      LIG  
+ATOM   4772 H27  LIG     1      19.067   9.963  33.768  1.00  0.00      LIG  
+TER
