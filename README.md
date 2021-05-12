@@ -17,11 +17,11 @@ Results: Experimentally verified bioactivity data points, obtained from public d
 
 Protein Domain-Based Prediction of Compound–Target Interactions and Experimental Validation on LIM Kinases
 
-Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ian Baxendale6, Maria Martin7 and Rengul Cetin-Atalay3,8,\*<b>
-1 Department of Computer Engineering, Hacettepe University, 06800 Ankara, Turkey<b>
-2 Institute of Informatics, Hacettepe University, 06800 Ankara, Turkey<b>
-3 CanSyL, Graduate School of Informatics, Middle East Technical University, 06800 Ankara, Turkey<b>
-4 Center for Genomics and Rare Diseases & Biobank for Rare Diseases, Hacettepe University, 06230 Ankara, Turkey<b>
+Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ian Baxendale6, Maria Martin7 and Rengul Cetin-Atalay3,8,\*<br>
+1 Department of Computer Engineering, Hacettepe University, 06800 Ankara, Turkey<br>
+2 Institute of Informatics, Hacettepe University, 06800 Ankara, Turkey<br>
+3 CanSyL, Graduate School of Informatics, Middle East Technical University, 06800 Ankara, Turkey<br>
+4 Center for Genomics and Rare Diseases & Biobank for Rare Diseases, Hacettepe University, 06230 Ankara, Turkey<br>
 5 School of Chemistry, University College Dublin, D04 N2E2 Dublin, Ireland.
 6 Department of Chemistry, University of Durham, DH1 3LE Durham, UK
 7 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Trust Genome Campus, CB10 1SD Hinxton, Cambridge, UK
