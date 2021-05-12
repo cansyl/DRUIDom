@@ -8,10 +8,10 @@ Proposed solution: Here we propose a new computational method “DRUIDom” to p
 Results: Experimentally verified bioactivity data points, obtained from public databases, are meticulously filtered to construct datasets of active/interacting and inactive/noninteracting compound-target pairs (¬¬~2.9 million data points), to be used as training data for calculating parameters of compound-domain mappings, which led to 27,032 high-confidence associations between 250 domains and 8,165 compounds, and a finalized output of 5 million new compound-protein interactions. DRUIDom is experimentally validated by the synthesis and the bioactivity analyses of compounds predicted to target LIM-Kinase proteins, which play critical roles in the regulation cell motility, cell cycle progression, and differentiation through actin filament dynamics. We showed that LIMK-inhibitor-2 and its novel derivatives significantly block the cancer cell migration through inhibition of LIMK phosphorylation and the downstream protein cofilin. One of the derivative compounds (LIMKi-2d) is identified as a promising candidate due to its action on resistant Mahlavu liver cancer cells. The results demonstrated that DRUIDom can be exploited to identify drug candidate compounds for known targets, and to predict new target proteins based on the defined compound-domain relationships.
 
 ## Overall drug/compound - target protein interaction prediction approach in DRUIDom:
-![Figure1a](https://user-images.githubusercontent.com/13165170/118031417-2c3eff80-b36f-11eb-9c58-d05040d2512c.png)
+![Figure1a](https://user-images.githubusercontent.com/13165170/118031417-2c3eff80-b36f-11eb-9c58-d05040d2512c.png, width:900)
 
 ## Drug/compound - domain mapping procedure over two representative toy examples:
-![Figure1b](https://user-images.githubusercontent.com/13165170/118031433-319c4a00-b36f-11eb-85f1-40641cdf25c3.png)
+![Figure1b](https://user-images.githubusercontent.com/13165170/118031433-319c4a00-b36f-11eb-85f1-40641cdf25c3.png, width:900)
 
 ## Article Info
 
