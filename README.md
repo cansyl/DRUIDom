@@ -40,7 +40,7 @@ All analyses and computation in this study (available through: 'DRUIDom_Source_C
 
 Contact: tuncadogan@hacettepe.edu.tr
 
-Large files (> 25 Mb) that could not be uploaded to the repository are available [here](https://drive.google.com/file/d/1aQ3t93LD6H3R4aKzVsMqSnzDTvaKsxsS/view?usp=sharing).
+Large files (> 25 Mb) that could not be uploaded to the repository are available [here](https://drive.google.com/file/d/1aQ3t93LD6H3R4aKzVsMqSnzDTvaKsxsS/view?usp=sharing)
 
 ## License
 
