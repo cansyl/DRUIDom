@@ -40,6 +40,8 @@ All analyses and computation in this study (available through: 'DRUIDom_Source_C
 
 Contact: tuncadogan@hacettepe.edu.tr
 
+Large files (> 25 Mb) that could not be uploaded to the repository are available [here](https://drive.google.com/file/d/1aQ3t93LD6H3R4aKzVsMqSnzDTvaKsxsS/view?usp=sharing).
+
 ## License
 
 DRUIDom (DRUg Interacting Domains): a computational method for predicting new drug/compound - target protein interactions for drug discovery and repurposing, via mapping ligands to structural domains
