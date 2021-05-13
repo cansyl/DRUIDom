@@ -1,4 +1,5 @@
 # DRUIDom
+
 **DRUIDom (DRUg Interacting Domains): a computational method for predicting new drug/compound - target protein interactions for drug discovery and repurposing, via mapping ligands to structural domains.**
 
 Motivation: Predictive approaches such as virtual screening have been used in drug discovery with the objective of reducing experimental time, labor and costs. Current machine learning or network-based approaches have issues related to generalization, usability or model interpretability, especially due to complexity of the target protein structure and function, and the bias in system training datasets.
@@ -43,7 +44,7 @@ Large files (> 25 Mb) that could not be uploaded to the repository are available
 
 ## Contact
 
-For inquiries please contact: tuncadogan@hacettepe.edu.tr, tuncadogan@gmail.com
+For inquiries about DRUIDom please contact: tuncadogan@hacettepe.edu.tr, tuncadogan@gmail.com
 
 
 ## License
