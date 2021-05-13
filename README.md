@@ -29,11 +29,13 @@ Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ia
 8 Section of Pulmonary and Critical Care Medicine, University of Chicago, Chicago IL, 60637, USA<br>
 \*  Corresponding authors
 
-## Citation
+**Citation**
 
 If you find DRUIDom useful, please consider citing our pre-print:
 
 Doğan, T., Akhan, E., Baumann, M., Koyas, A., Atas, H., Baxendale, I., Martin, M., Cetin-Atalay, R. (2021). Protein Domain-Based Prediction of Compound–Target Interactions and Experimental Validation on LIM Kinases. *bioRxiv* ... .
+
+DOI: ...
 
 ## Programming Environment & Files
 
