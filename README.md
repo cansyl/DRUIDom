@@ -14,11 +14,12 @@ Results: Experimentally verified bioactivity data points, obtained from public d
 ## Drug/compound-domain mapping procedure over toy examples:
 <img src="https://user-images.githubusercontent.com/13165170/118031433-319c4a00-b36f-11eb-85f1-40641cdf25c3.png" width="900"> 
 
-## Article Info
+## Article Info & Citation
 
 Protein Domain-Based Prediction of Compound–Target Interactions and Experimental Validation on LIM Kinases
 
 Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ian Baxendale6, Maria Martin7 and Rengul Cetin-Atalay3,8,\*<br>
+
 1 Department of Computer Engineering, Hacettepe University, 06800 Ankara, Turkey<br>
 2 Institute of Informatics, Hacettepe University, 06800 Ankara, Turkey<br>
 3 CanSyL, Graduate School of Informatics, Middle East Technical University, 06800 Ankara, Turkey<br>
@@ -28,8 +29,6 @@ Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ia
 7 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Trust Genome Campus, CB10 1SD Hinxton, Cambridge, UK<br>
 8 Section of Pulmonary and Critical Care Medicine, University of Chicago, Chicago IL, 60637, USA<br>
 \*  Corresponding authors
-
-**Citation**
 
 If you find DRUIDom useful, please consider citing our pre-print:
 
