@@ -46,7 +46,7 @@ All analyses and computation in this study (available through: 'DRUIDom_Source_C
 * **"DRUIDom_domain-compound_mappings_finalized.txt":** Associations between single domains (from InterPro) and drugs/compounds obtained by applying the DRUIDom domain mapping procedure.
 * **"DRUIDom_domainpair-compound_mappings_finalized.txt":** Associations between domain pairs (from InterPro) and drugs/compounds obtained by applying the DRUIDom domain pair mapping procedure.
 * **"DRUIDom_DTI_predictions_novel_finalized.txt.zip":** Predicted drug/compound - target protein interactions that are novel (not found in the source dataset), produced by DRUIDom.
-* **"DRUIDom_Files":** A folder that contains all intermediary files generated during the application of DRUIDom pipeline. Large intermediary files (> 25 Mb) that could not be uploaded to the repository are available [here](https://drive.google.com/file/d/1aQ3t93LD6H3R4aKzVsMqSnzDTvaKsxsS/view?usp=sharing)
+* **"DRUIDom_Files":** A folder that contains all input and intermediary files generated during the application of DRUIDom pipeline. Large input and intermediary files (> 25 Mb) that could not be uploaded to the repository are available [here](https://drive.google.com/file/d/1aQ3t93LD6H3R4aKzVsMqSnzDTvaKsxsS/view?usp=sharing)
 
 ## Contact
 
