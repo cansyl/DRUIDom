@@ -916,6 +916,10 @@ fid=fopen('DRUIDom_Files/Domain_mapping_Prot_noSim_3_all_Org.txt','w');
 fprintf(fid,'%s\t%s\t%d\t%d\t%d\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\n',t{:});
 fclose(fid);
 save DRUIDom_Files/Domain_mapping_Prot_noSim_3_all_Org.mat Domain_mapping_Prot_noSim_3_all_Org
+% (raw domain mapping stats: 449,294 mappings)
+fid=fopen('DRUIDom_raw_domain-compound_mappings.txt','w');
+fprintf(fid,'%s\t%s\t%d\t%d\t%d\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\n',t{:});
+fclose(fid);
 
 % (filtering high score mappings, using the same filers are previously: MCC>=0, F1>=0.5, ACCU>=0.5, REC>=0.5, PRE>=0.5)
 Domain_mapping_Prot_noSim_3_all_MulFil=cell(4000000,9);
@@ -967,7 +971,7 @@ fclose(fid);
 length(Domain_mapping_Prot_Sim5_noSim3_MulFil_merged)
 length(unique(Domain_mapping_Prot_Sim5_noSim3_MulFil_merged(:,1)))
 length(unique(Domain_mapping_Prot_Sim5_noSim3_MulFil_merged(:,2)))
-% (finalized domain association stats: 27,032 mappings between 8,165 compounds and 250 InterPro domains)
+% (finalized domain mapping stats: 27,032 mappings between 8,165 compounds and 250 InterPro domains)
 fid=fopen('DRUIDom_domain-compound_mappings_finalized.txt','w');
 fprintf(fid,'%s\t%s\t%d\t%d\t%d\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\n',t{:});
 fclose(fid);
@@ -1207,6 +1211,10 @@ fid=fopen('DRUIDom_Files/DomainPair_mapping_Prot_noSim_3_all_Org.txt','w');
 fprintf(fid,'%s\t%s\t%d\t%d\t%d\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\n',t{:});
 fclose(fid);
 save DRUIDom_Files/DomainPair_mapping_Prot_noSim_3_all_Org.mat DomainPair_mapping_Prot_noSim_3_all_Org
+% (raw domain pair mapping stats: 1,075,550 mappings)
+fid=fopen('DRUIDom_raw_domainpair-compound_mappings.txt','w');
+fprintf(fid,'%s\t%s\t%d\t%d\t%d\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\n',t{:});
+fclose(fid);
 
 % (filtering high score mappings using the same filters as previously: MCC>=0, F1>=0.5, ACCU>=0.5, REC>=0.5, PRE>=0.5)
 DomainPair_mapping_Prot_noSim_3_all_MulFil=cell(4000000,9);
@@ -1281,7 +1289,7 @@ fclose(fid);
 length(DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged)
 length(unique(DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged(:,1)))
 length(unique(DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged(:,2)))
-% (finalized domain pair association stats: 3,721 mappings between 1,456 compounds and 270 InterPro domain pairs)
+% (finalized domain pair mapping stats: 3,721 mappings between 1,456 compounds and 270 InterPro domain pairs)
 
 
 
@@ -1323,7 +1331,7 @@ save DRUIDom_Files/Domain_mapping_Prot_Sim5_noSim3_MulFil_merged_final.mat Domai
 length(Domain_mapping_Prot_Sim5_noSim3_MulFil_merged_final)
 length(unique(Domain_mapping_Prot_Sim5_noSim3_MulFil_merged_final(:,1)))
 length(unique(Domain_mapping_Prot_Sim5_noSim3_MulFil_merged_final(:,2)))
-% (finalized single domain association stats: 27,021 mappings between 8,164 compounds and 250 InterPro domains)
+% (finalized single domain mapping stats: 27,021 mappings between 8,164 compounds and 250 InterPro domains)
 
 DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final=DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged;
 DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final(del_realind2,:)=[];
@@ -1331,7 +1339,7 @@ save DRUIDom_Files/DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final.mat D
 length(DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final)
 length(unique(DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final(:,1)))
 length(unique(DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final(:,2)))
-% (finalized domain pair association stats: 22 mappings between 10 compounds and 12 InterPro domain pairs)
+% (finalized domain pair mapping stats: 22 mappings between 10 compounds and 12 InterPro domain pairs)
 t=DomainPair_mapping_Prot_Sim5_noSim3_MulFil_merged_final';
 fid=fopen('DRUIDom_domainpair-compound_mappings_finalized.txt','w');
 fprintf(fid,'%s\t%s\t%d\t%d\t%d\t%d\t%.4f\t%.4f\t%.4f\t%.4f\t%.4f\n',t{:});
