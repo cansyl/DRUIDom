@@ -34,7 +34,7 @@ If you find DRUIDom useful, please consider citing our pre-print:
 
 Doğan, T., Akhan, E., Baumann, M., Koyas, A., Atas, H., Baxendale, I., Martin, M., Cetin-Atalay, R. (2021). Protein Domain-Based Prediction of Compound–Target Interactions and Experimental Validation on LIM Kinases. *bioRxiv*, 2021.06.14.448307.
 
-DOI: 10.1101/2021.06.14.448307
+DOI/URL: [10.1101/2021.06.14.448307](https://doi.org/10.1101/2021.06.14.448307)
 
 ## Programming Environment & Files
 
