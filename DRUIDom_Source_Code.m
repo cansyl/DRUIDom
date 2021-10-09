@@ -1,4 +1,4 @@
-% DRUIDom v1.0
+% DRUIDom v1.1
 %
 % DRUIDom (DRUg Interacting Domains): a computational method for
 % predicting new drug/compound - target protein interactions for drug
@@ -20,7 +20,7 @@
 % Atas, Ian Baxendale, Maria Martin and Rengul Cetin-Atalay*
 % * Corresponding authors
 % 
-% DOI: 
+% Pre-print DOI:10.1101/2021.06.14.448307
 %
 % ------------------------------------------------------------------------
 %
@@ -430,7 +430,7 @@ save DRUIDom_Files/Combined_Org_Comp2_07.mat Combined_Org_Comp2
 save DRUIDom_Files/Combined_Org_Sim_07.mat Combined_Org_Sim
 
 [Lia1,Locb1]=ismember(Combined_Org_Comp1,Combined_Org_id_unique);
-[Lia2,Locb2]=ismember(Combined_Org_Comp2,Combined_Org_id_unique);
+[~,Locb2]=ismember(Combined_Org_Comp2,Combined_Org_id_unique);
 save DRUIDom_Files/Locations_07.mat Locb1 Locb2
 [Lia_act,Locb_act]=ismember(Combined_Org_act(:,2),Combined_Org_id_unique);
 [Lia_inact,Locb_inact]=ismember(Combined_Org_inact_withact(:,2),Combined_Org_id_unique);
@@ -1507,7 +1507,7 @@ DomMap_DTI_Predictions_finalized_novelpred_23=strcat(DomMap_DTI_Predictions_fina
 DomMap_DomPair_DTI_Predictions_finalized_novelpred_23=strcat(DomMap_DomPair_DTI_Predictions_finalized_novelpred(:,1), {' '}, DomMap_DomPair_DTI_Predictions_finalized_novelpred(:,2));
 [ins,ia,ib]=intersect(DomMap_DTI_Predictions_finalized_novelpred_23,DomMap_DomPair_DTI_Predictions_finalized_novelpred_23);
 find(cell2mat(DomMap_DTI_Predictions_finalized_novelpred(ia,3))>cell2mat(DomMap_DomPair_DTI_Predictions_finalized_novelpred(ib,3)))
-% (none of the single domain based preditions scored better compared to domain pair mappings -most of them had the exact same score-, so all intersections can be selected from the domain pair association based predictions)
+% (none of the single domain based predictions scored better compared to domain pair mappings -most of them had the exact same score-, so all intersections can be selected from the domain pair association based predictions)
 % (there is one example where the predictions score was improved due to domain pair mapping: compound id: CHEMBL450519, protein acc: P06239, score of singe domain and domain pair mappings: 0.7746 & 0.8433)
 DomMap_DTI_Predictions_finalized_novelpred(ia,:)=[];
 DomMap_SingDom_DomPair_merged_DTI_Pred_final_novelpred=[DomMap_DTI_Predictions_finalized_novelpred;DomMap_DomPair_DTI_Predictions_finalized_novelpred];
@@ -1690,7 +1690,7 @@ ConfThresArray_MCC=0:0.1:1;
 Perf_results_DomainMapping=zeros(length(ConfThresArray_ACCU)*length(ConfThresArray_MCC),21);
 too=0;
 %(previous finalized mapping parameters were: MCC>=0.5, F1>=0.7, ACCU>=0.8, REC>=0.7, PRE>=0.7)
-for j=1:length(ConfThresArray_MCC)
+for j=1%:length(ConfThresArray_MCC)
     for k=1:length(ConfThresArray_ACCU)
         too=too+1;
         disp(['Threshold array index: ' num2str(too), ' / ' num2str(length(ConfThresArray_ACCU)*length(ConfThresArray_MCC))])
@@ -1790,8 +1790,11 @@ for j=1:length(ConfThresArray_MCC)
         F1=(2*TP)/(2*TP+FP+FN);
         REC=TP/(TP+FN);
         PRE=TP/(TP+FP);
+        m(j,k)=TP;n(j,k)=length(DomMap_perf_cal_pairs);M(j,k)=length(InteracDome_perf_cal_pairs);N(j,k)=length(unique(Shared2_InteracDome_repNR_PDBligid))*length(unique(Shared2_InteracDome_repNR_Pfamid));
+        Enrichment=(m(j,k)/n(j,k))/(M(j,k)/N(j,k));
+        [h_comp,pval_enrich,stats_comp]=fishertest([m(j,k) n(j,k); M(j,k) N(j,k)],'Alpha',0.01);
         
-        Perf_results_DomainMapping(too,1:21)=[ConfThresArray_REC(1,k) ConfThresArray_PRE(1,k) ConfThresArray_ACCU(1,k) ConfThresArray_F1(1,k) ConfThresArray_MCC(1,j) Num_map Num_dom Num_lig Cov_dom Cov_lig ExCov_dom ExCov_lig TP FP FN TN REC PRE ACCU F1 MCC];
+        %Perf_results_DomainMapping(too,1:23)=[ConfThresArray_REC(1,k) ConfThresArray_PRE(1,k) ConfThresArray_ACCU(1,k) ConfThresArray_F1(1,k) ConfThresArray_MCC(1,j) Num_map Num_dom Num_lig Cov_dom Cov_lig ExCov_dom ExCov_lig TP FP FN TN REC PRE ACCU F1 MCC Enrichment pval_enrich];
     end
 end
 save DRUIDom_Files/Performance_analysis/Perf_results_DomainMapping.mat Perf_results_DomainMapping
@@ -1823,7 +1826,7 @@ sum(dom_freq_hist_sort(1,1:10))/sum(dom_freq_hist_sort)
 dom_most_freq_10=dom_uniq(dom_freq_hist>1080);
 
 
-% Calculation of protein & family statistics in the source bioactivty datasetand the output predictions dataset:
+% Calculation of protein & family statistics in the source bioactivty dataset and the output predictions dataset:
 
 load DRUIDom_Files/Combined_Org_act_inact.mat
 load DRUIDom_Files/Combined_Org_act_var.mat
@@ -1904,7 +1907,7 @@ Freq_pred_uniq_prot_act(3,1)=length(unique(Pred_prot_acc(Lia,1)));
 [Lia,~]=ismember(Pred_prot_acc,TranscriptionFactor_UniProt_acc);
 Freq_pred_act(4,1)=sum(Lia);
 Freq_pred_uniq_prot_act(4,1)=length(unique(Pred_prot_acc(Lia,1)));
-[Lia,Locb]=ismember(Pred_prot_acc,OtherFamilies_UniProt_acc);
+[Lia,~]=ismember(Pred_prot_acc,OtherFamilies_UniProt_acc);
 Freq_pred_act(5,1)=sum(Lia);
 Freq_pred_uniq_prot_act(5,1)=length(unique(Pred_prot_acc(Lia,1)));
 for i=1:5
@@ -1913,4 +1916,115 @@ end
 for i=1:5
     Freq_pred_uniq_prot_act(i,2)=Freq_pred_uniq_prot_act(i,1)/sum(Freq_pred_uniq_prot_act(:,1));
 end
+
+
+% Analysis of interaction predictions for compound-target pairs with
+% reported bioaxctivity values between 10 and 20 uM:
+
+%(loading chembl bioactivty dataset and filtering for 10-20 uM bioactivity values)
+% awk -F '\t' '{print $1,"\t",$7,"\t",$9,"\t",$10,"\t",$11,"\t",$12,"\t",$13,"\t",$35}' Chembl_download.tsv > Chembl_v29_human_singleprot_pchembl_bioact.txt
+fileID = fopen('Chembl_v29_human_singleprot_pchembl_bioact.txt');
+Chemb=textscan(fileID, '%s %s %s %s %f %s %f %s', 'delimiter', '\t', 'headerlines', 1);
+fclose(fileID);
+Chemb_stanval=Chemb{1,5};
+Chemb_compid=Chemb{1,1};
+Chemb_targid=Chemb{1,8};
+ind=find(Chemb_stanval>10000 & Chemb_stanval<20000);
+Chemb_stanval_10_20=Chemb_stanval(ind);
+Chemb_compid_10_20=Chemb_compid(ind);
+Chemb_targid_10_20=Chemb_targid(ind);
+
+fileID = fopen('chembl_v29_uniprot_mapping.txt');
+chemb_unip_map=textscan(fileID, '%s %s %s %s', 'delimiter', '\t');
+fclose(fileID);
+chemb_unip_map_u=chemb_unip_map{1,1};
+chemb_unip_map_c=chemb_unip_map{1,2};
+[~,Locb]=ismember(Chemb_targid_10_20,chemb_unip_map_c);
+Chemb_targuniacc_10_20=chemb_unip_map_u(Locb);
+
+load DRUIDom_Files/DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final.mat
+[Lia,~]=ismember(Chemb_compid_10_20,DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final(:,1));
+Chemb_compid_10_20_sel=Chemb_compid_10_20(Lia==1);
+Chemb_targid_10_20_sel=Chemb_targid_10_20(Lia==1);
+Chemb_targuniacc_10_20_sel=Chemb_targuniacc_10_20(Lia==1);
+Chemb_stanval_10_20_sel=Chemb_stanval_10_20(Lia==1);
+Chemb_pair_10_20_sel=strcat(Chemb_compid_10_20_sel,Chemb_targuniacc_10_20_sel);
+
+comp_uniq=unique(Chemb_compid_10_20_sel);
+[Lia2,Locb2]=ismember(DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final(:,1),comp_uniq);
+pred_sel=strcat(DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final(Lia2==1,1),DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final(Lia2==1,2));
+pred_sel_scor=DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final(Lia2==1,3);
+
+[Lia3,Locb3]=ismember(Chemb_pair_10_20_sel,pred_sel);
+Chemb_pair_10_20_sel_intsect=Chemb_pair_10_20_sel(Lia3==1);
+Chemb_stanval_10_20_sel_intsect=Chemb_stanval_10_20_sel(Lia3==1);
+
+%(statistics)
+length(unique(strcat(Chemb_compid_10_20,Chemb_targuniacc_10_20)))
+length(unique(Chemb_pair_10_20_sel_intsect))
+round(median(Chemb_stanval_10_20_sel_intsect))
+round(median(Chemb_stanval_10_20_sel(setdiff(1:4078,find(Lia3==1)))))
+%(output intersecting pairs list)
+intsect_pair_list=unique(strcat(Chemb_compid_10_20_sel(Lia3==1), '-', Chemb_targuniacc_10_20_sel(Lia3==1)));
+
+
+% Preparation of table signaling pathway-based prediction list and extraction of pathway-based statistics:
+
+fileID = fopen('kegg_hsa_pathways_info.txt');
+kegg=textscan(fileID, '%s %s', 'delimiter', '\t');
+fclose(fileID);
+kegg_pathway_info=kegg{1,1};
+kegg_pathway_info(:,2)=kegg{1,2};
+
+fileID = fopen('kegg_pathway_protein_associations.tsv');
+kegg_pathway_assoc=textscan(fileID, '%s %s %s %s', 'delimiter', '\t', 'headerlines', 1);
+fclose(fileID);
+kegg_pathway_assoc_uniacc=kegg_pathway_assoc{1,2};
+kegg_pathway_assoc_patid=kegg_pathway_assoc{1,3};%kegg_pathway_assoc_patid(end+1,1)=cellstr('');
+kegg_pathway_assoc_patnam=kegg_pathway_assoc{1,4};%kegg_pathway_assoc_patnam(end+1,1)=cellstr('');
+
+load DRUIDom_Files/DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final.mat
+pred_all=DomMap_SingDom_DomPair_merged_DTI_Pred_propagat_novelpred_final;
+[Lia,Locb]=ismember(pred_all(:,2),kegg_pathway_assoc_uniacc);
+%(# of predictions with pathway-annotated targets)
+sum(Lia)
+
+%(constructing and saving pathway specific prediction files, and keeping statistics)
+stat_pred_pat=zeros(length(kegg_pathway_info),3);
+for i=1:length(kegg_pathway_info)
+    disp(['Line number: ' num2str(i), ' / ' num2str(length(kegg_pathway_info))])
+    prot_temp=kegg_pathway_assoc_uniacc(ismember(kegg_pathway_assoc_patid,kegg_pathway_info(i,1))==1,1);
+    pred_temp=pred_all(ismember(pred_all(:,2),prot_temp)==1,:);
+    if ~isempty(pred_temp)
+        stat_pred_pat(i,1)=size(pred_temp,1);stat_pred_pat(i,2)=length(unique(pred_temp(:,1)));stat_pred_pat(i,3)=length(unique(pred_temp(:,2)));
+        fid=fopen(['DRUIDom_Files/DRUIDom_DTI_predictions_novel_pathwaybased/',kegg_pathway_info{i,2},' (',kegg_pathway_info{i,1},').txt'],'w');
+        fprintf(fid,'%s\n',['Compound_id_(PubChem/ChEMBL)	Protein_accession_(UniProt)	Prediction_score_(MCC)']);
+        fclose(fid);
+        t=pred_temp';
+        fid=fopen(['DRUIDom_Files/DRUIDom_DTI_predictions_novel_pathwaybased/',kegg_pathway_info{i,2},' (',kegg_pathway_info{i,1},').txt'],'a+');
+        fprintf(fid,'%s\t%s\t%.4f\n',t{:});
+        fclose(fid);
+    end
+end
+%(organizing and saving the statistics file)
+kegg_pathway_info_stats=[kegg_pathway_info num2cell(stat_pred_pat)];
+kegg_pathway_info_stats(stat_pred_pat(:,1)==0,:)=[];
+fid=fopen('DRUIDom_Files/DRUIDom_pathway-based_pred_stats.txt','w');
+fprintf(fid,'%s\n',['Pathway_id_(KEGG)	Pathway_name	#_of_predictions	#_of_compounds	#_of_targets']);
+fclose(fid);
+t=kegg_pathway_info_stats';
+fid=fopen('DRUIDom_Files/DRUIDom_pathway-based_pred_stats.txt','a+');
+fprintf(fid,'%s\t%s\t%d\t%d\t%d\n',t{:});
+fclose(fid);
+save DRUIDom_Files/kegg_pathway_info_stats.mat kegg_pathway_info_stats
+
+
+
+
+
+
+
+
+
+
 
