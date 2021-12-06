@@ -16,9 +16,9 @@ Results: Experimentally verified bioactivity data points, obtained from public d
 
 ## Article Info & Citation
 
-Protein Domain-Based Prediction of Compound–Target Interactions and Experimental Validation on LIM Kinases
+Protein Domain-Based Prediction of Drug/Compound–Target Interactions and Experimental Validation on LIM Kinases
 
-Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ian Baxendale6, Maria Martin7 and Rengul Cetin-Atalay3,8,\*<br>
+Tunca Doğan1,2,3\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ian Baxendale6, Maria Martin7 and Rengul Cetin-Atalay3,8,\*<br>
 
 1 Department of Computer Engineering, Hacettepe University, 06800 Ankara, Turkey<br>
 2 Institute of Informatics, Hacettepe University, 06800 Ankara, Turkey<br>
@@ -26,15 +26,15 @@ Tunca Doğan1,2,\*, Ece Akhan3,4, Marcus Baumann5, Altay Koyas3, Heval Atas3, Ia
 4 Center for Genomics and Rare Diseases & Biobank for Rare Diseases, Hacettepe University, 06230 Ankara, Turkey<br>
 5 School of Chemistry, University College Dublin, D04 N2E2 Dublin, Ireland<br>
 6 Department of Chemistry, University of Durham, DH1 3LE Durham, UK<br>
-7 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Trust Genome Campus, CB10 1SD Hinxton, Cambridge, UK<br>
+7 European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus, CB10 1SD Hinxton, Cambridge, UK<br>
 8 Section of Pulmonary and Critical Care Medicine, University of Chicago, Chicago IL, 60637, USA<br>
 \*  Corresponding authors
 
-If you find DRUIDom useful, please consider citing our pre-print:
+If you find DRUIDom useful, please consider citing our article:
 
-Doğan, T., Akhan, E., Baumann, M., Koyas, A., Atas, H., Baxendale, I., Martin, M., Cetin-Atalay, R. (2021). Protein Domain-Based Prediction of Compound–Target Interactions and Experimental Validation on LIM Kinases. *bioRxiv*, 2021.06.14.448307.
+Doğan, T., Akhan, E., Baumann, M., Koyas, A., Atas, H., Baxendale, I., Martin, M., Cetin-Atalay, R. (2021). Protein domain-based prediction of drug/compound–target interactions and experimental validation on LIM kinases. *PLOS Computational Biology, 17*(11), e1009171.
 
-DOI/URL: [10.1101/2021.06.14.448307](https://doi.org/10.1101/2021.06.14.448307)
+DOI/URL: [10.1371/journal.pcbi.1009171](https://doi.org/10.1371/journal.pcbi.1009171)
 
 ## Programming Environment & Files
 
